@@ -33,9 +33,16 @@ namespace Lab11._2Registration.Controllers
             return View();
         }
 
-        public ActionResult AddUser(string firstname)
-        {
+
+
+
+        public ActionResult AddUser(string firstname, int favcolor)
+        { 
+
             ViewBag.UserAdded = $"Welcome, {firstname}";
+            
+            ViewBag.FavColor2 = $"{favcolor}";
+           
             return View();
         }
 
